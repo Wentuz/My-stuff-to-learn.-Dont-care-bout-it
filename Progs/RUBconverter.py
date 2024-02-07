@@ -1,5 +1,3 @@
-
-
 def main():
 
     amount = [0, 0]
