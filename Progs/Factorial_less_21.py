@@ -1,17 +1,17 @@
 
-def factorial(y):
-    x = 0
-    sil = 1
+def factorial(y:int) -> int:
+    x:int = 0
+    sil:int = 1
     while x < y:
         x+=1
         sil *= x
     return sil
 
 
-def main():
-    rangeError = 0
+def main() -> None:
+    rangeError:int = 0
     try:
-        num = int(input("Podaj liczbe naturalna: "))
+        num:int = int(input("Podaj liczbe naturalna nie wieksza niz 21: "))
         if num >= 21:
             raise rangeError("Range error")
     except ValueError:
@@ -23,4 +23,6 @@ def main():
     else:
         print("Silnia",num,"! = ", factorial(num))
 
-main()
+
+if __name__ == '__main__':
+    main()

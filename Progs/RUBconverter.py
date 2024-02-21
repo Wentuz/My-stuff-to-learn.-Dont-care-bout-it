@@ -1,6 +1,6 @@
-def main():
+def main() -> None:
 
-    amount = [0, 0]
+    amount:int = [0, 0]
 
     def USD(value: int) -> int:
         return value * 91.0517
@@ -35,4 +35,6 @@ def main():
         print(f"{value}{currency} = {converted} RUB")
 
     get_currency()
-main()
+
+if __name__ == '__main__':
+    main()

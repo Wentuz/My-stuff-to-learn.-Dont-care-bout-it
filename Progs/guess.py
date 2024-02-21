@@ -1,10 +1,10 @@
 import random
 
 print("The range for numbers is 1 to 100")
-number = (random.randrange(1,101))
+number:int = (random.randrange(1,101))
 print(number)
 
-def game():
+def game() -> None:
     answer = int(input("Guess the number : "))
     while answer == number :
         print("Congrats ! You guessed")
@@ -12,5 +12,6 @@ def game():
     else:
         print("nope")
         game()
-        
-game()
+
+if __name__ == '__main__':      
+    game()

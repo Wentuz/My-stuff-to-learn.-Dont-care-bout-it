@@ -1,24 +1,20 @@
-from multiprocessing.resource_sharer import stop
 
-window = [1024,640]
+def dodaj(x:float, y:float) -> float:
+    return x+y
 
-def calc():
+def odejmij(x:float, y:float) -> float:
+    return x-y
 
-    x = int(input("Podaj 1 liczbe:"))
-    y = int(input("Podaj 2 liczbe:"))
+def pomnoz(x:float, y:float) -> float:
+    return x*y
 
-    def dodaj():
-        print(x+y)
-        calc()
-    def odejmij():
-        print(x-y)
-        calc()
-    def pomnoz():
-        print(x*y)
-        calc()
-    def podziel():
-        print(x/y)
-        calc()
+def podziel(x:float, y:float) -> float:
+    return x/y
+
+def calc() -> None:
+
+    x:float = float(input("Podaj 1 liczbe:"))
+    y:float = float(input("Podaj 2 liczbe:"))
 
     print("1. Dodaj")
     print("2. Odejmij")
@@ -26,17 +22,20 @@ def calc():
     print("4. Podziel")
     print("5. Zakończ")
 
-    opr = int(input("Podaj operacje logiczna :"))
+    opr:int = int(input("Podaj operacje logiczna :"))
 
     if opr == 5:
-        stop
+        print("Stopping program...")
     elif opr == 1:
-        dodaj()
+        print(dodaj(x, y))
     elif opr == 2:
-        odejmij()
+        print(odejmij(x, y))
     elif opr == 3:
-        pomnoz()
+        print(pomnoz(x, y))
     elif opr == 4:
-        podziel()
-        
-calc()
+        print(podziel(x, y))
+    calc()
+
+
+if __name__ == '__main__':     
+    calc()
