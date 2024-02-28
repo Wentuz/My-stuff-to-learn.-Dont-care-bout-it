@@ -1,0 +1,28 @@
+[
+    {
+      "prompt": "What is the capital of France?",
+      "options": ["A. London", "B. Paris", "C. Rome", "D. Berlin"],
+      "answer": "B"
+    },
+    {
+      "prompt": "Which planet is known as the Red Planet?",
+      "options": ["A. Earth", "B. Jupiter", "C. Mars", "D. Venus"],
+      "answer": "C"
+    },
+    {
+      "prompt": "Who painted the Mona Lisa?",
+      "options": ["A. Vincent van Gogh", "B. Leonardo da Vinci", "C. Pablo Picasso", "D. Michelangelo"],
+      "answer": "B"
+    },
+    {
+      "prompt": "What is the chemical symbol for water?",
+      "options": ["A. H2O", "B. CO2", "C. NaCl", "D. O2"],
+      "answer": "A"
+    },
+    {
+      "prompt": "Which mammal can fly?",
+      "options": ["A. Bat", "B. Dolphin", "C. Elephant", "D. Lion"],
+      "answer": "A"
+    }
+  ]
+  
