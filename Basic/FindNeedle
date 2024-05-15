@@ -1,0 +1,11 @@
+def find_needle(haystack):
+    pos = 0
+    for x in haystack:
+        if x == 'needle':
+            position = pos
+        pos = pos + 1
+    string = 'found needle at ' + str(position)
+    return string
+
+if __name__ == '__main__':
+    print(find_needle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
